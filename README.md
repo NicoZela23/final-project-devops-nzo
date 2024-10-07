@@ -22,75 +22,98 @@ Before you begin, ensure you have met the following requirements:
 - [Docker](https://www.docker.com/get-started)
 - [Docker Hub Account](https://hub.docker.com/)
 - [Git](https://git-scm.com/)
-
 ## Local
 
 1. Clone the repository:
+  
+```bash
 
-`bash
    git clone https://github.com/NicoZela23/final-project-devops-nzo.git
+
    cd final-project-devops-nzo
-   `
+
+   ```
 
 2. Install the dependencies and start the server
 
-`bash
+```bash
+
    npm install
+
    npm run dev
-   `
+
+   ```
 
 ## Docker
 
-1. Clone the repository:
+1. Clone the repository:  
 
-`bash
+```bash
+
    git clone https://github.com/NicoZela23/final-project-devops-nzo.git
+
    cd final-project-devops-nzo
-   `
+
+   ```
 
 2. Build the project with Docker and check if it is available in your images
+  
+```bash
 
-`bash
    docker build -t final-project-devops-nzo:local .
+
    docker images
-   `
+
+   ```
 
 3. Run the Docker Container Locally
 
-`bash
-	docker run -d -p 8080:80 final-project-devops-nzo:local
-   `
+```bash
+
+    docker run -d -p 8080:80 final-project-devops-nzo:local
+
+   ```
 
 4. Test the Running Application
-   [Application Link](http://localhost:8080)
+
+   [Application Link](http://localhost:8080)
 
 ## Docker-Hub
 
 1. Login into Docker (new users)
 
-`bash
-	docker login
-   `
+```bash
+
+    docker login
+
+   ```
 
 and Enter your Docker Hub username and password when prompted.
 
 2. Pull the project from Docker Hub
 
-`bash
-	docker pull nicozela23/final-project-devops-nzo
-   `
+```bash
+
+    docker pull nicozela23/final-project-devops-nzo
+
+   ```
 
 3. Run the Docker Container
 
-`bash
-	docker run -d -p 8080:80 final-project-devops-nzo:local
-   `
+```bash
+
+    docker run -d -p 8080:80 final-project-devops-nzo:local
+
+   ```
 
 4. Check the running containers
 
-`bash
-	docker ps
-   `
+```bash
+
+    docker ps
+
+   ```
 
 5. Test the Running Application
-   [Application Link](http://localhost:8080)
+
+   [Application Link](http://localhost:8080)
