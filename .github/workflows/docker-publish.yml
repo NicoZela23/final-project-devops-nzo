@@ -47,7 +47,7 @@ jobs:
           password: ${{ secrets.DOCKER_PASSWORD }}
 
       - name: Build Docker image
-        run: docker build -t myusername/my-app:${{ github.sha }} .
+        run: docker build -t nicozela23/final-project-devops-nzo:${{ github.sha }} .
 
       - name: Push Docker image
-        run: docker push myusername/my-app:${{ github.sha }}
+        run: docker push nicozela23/final-project-devops-nzo:${{ github.sha }}
