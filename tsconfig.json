@@ -1,5 +1,13 @@
 {
-  "files": [],
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "esnext",
+    "jsx": "react-jsx",
+    "strict": true,
+    "esModuleInterop": true,
+    "moduleResolution": "bundler",
+    "composite": true
+  },
   "references": [
     { "path": "./tsconfig.app.json" },
     { "path": "./tsconfig.node.json" }
