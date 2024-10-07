@@ -27,52 +27,38 @@ Before you begin, ensure you have met the following requirements:
 1. Clone the repository:
   
 ```bash
-
    git clone https://github.com/NicoZela23/final-project-devops-nzo.git
-
    cd final-project-devops-nzo
-
-   ```
+```
 
 2. Install the dependencies and start the server
 
 ```bash
-
    npm install
-
    npm run dev
-
-   ```
+```
 
 ## Docker
 
 1. Clone the repository:  
 
 ```bash
-
    git clone https://github.com/NicoZela23/final-project-devops-nzo.git
-
    cd final-project-devops-nzo
-
-   ```
+```
 
 2. Build the project with Docker and check if it is available in your images
   
 ```bash
-
    docker build -t final-project-devops-nzo:local .
-
    docker images
-
-   ```
+```
 
 3. Run the Docker Container Locally
 
 ```bash
-
     docker run -d -p 8080:80 final-project-devops-nzo:local
-
-   ```
+```
 
 4. Test the Running Application
 
@@ -83,36 +69,28 @@ Before you begin, ensure you have met the following requirements:
 1. Login into Docker (new users)
 
 ```bash
-
     docker login
-
-   ```
+```
 
 and Enter your Docker Hub username and password when prompted.
 
 2. Pull the project from Docker Hub
 
 ```bash
-
     docker pull nicozela23/final-project-devops-nzo
-
-   ```
+```
 
 3. Run the Docker Container
 
 ```bash
-
     docker run -d -p 8080:80 final-project-devops-nzo:local
-
-   ```
+```
 
 4. Check the running containers
 
 ```bash
-
     docker ps
-
-   ```
+```
 
 5. Test the Running Application
 
